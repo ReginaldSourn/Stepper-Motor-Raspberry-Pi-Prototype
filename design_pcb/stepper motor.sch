@@ -1,0 +1,627 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:stepper motor-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Raspberry Pi Stepper Motor Part 1"
+Date "2018-02-22"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_02X20 P1
+U 1 1 5AA7D98E
+P 2400 4100
+F 0 "P1" H 2400 5150 50  0000 C CNN
+F 1 "Raspberry Pi Zero W" V 2400 4100 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_2x20" H 2400 3150 50  0001 C CNN
+F 3 "" H 2400 3150 50  0000 C CNN
+	1    2400 4100
+	1    0    0    -1  
+$EndComp
+Text GLabel 3100 3150 2    60   Input ~ 0
+5v
+Text GLabel 2900 3250 2    60   Input ~ 0
+5v
+Text GLabel 3100 3350 2    60   Input ~ 0
+GND
+Text GLabel 2850 3450 2    60   Input ~ 0
+TX_GPIO14
+Text GLabel 2850 3550 2    60   Input ~ 0
+RX_GPIO14
+Text GLabel 2850 3650 2    60   Input ~ 0
+GPIO18
+Text GLabel 2850 3750 2    60   Input ~ 0
+GND
+Text GLabel 2850 3850 2    60   Input ~ 0
+GPIO23
+Text GLabel 2850 3950 2    60   Input ~ 0
+GPIO24
+Text GLabel 2850 4050 2    60   Input ~ 0
+GND
+Text GLabel 2850 4150 2    60   Input ~ 0
+GPIO25
+Text GLabel 2850 4250 2    60   Input ~ 0
+SPI_CE0_GPIO08
+Text GLabel 2850 4350 2    60   Input ~ 0
+SPI_CE1_GPIO08
+Text GLabel 2850 4450 2    60   Input ~ 0
+I2C_ID_SC_EEPROM
+Text GLabel 2850 4550 2    60   Input ~ 0
+GND
+Text GLabel 2850 4650 2    60   Input ~ 0
+GPIO12
+Text GLabel 2850 4750 2    60   Input ~ 0
+GND
+Text GLabel 2850 4850 2    60   Input ~ 0
+GPIO16
+Text GLabel 2850 4950 2    60   Input ~ 0
+GPIO20
+Text GLabel 2850 5050 2    60   Input ~ 0
+GPIO21
+Text GLabel 1600 3150 0    60   Input ~ 0
+3.3V
+Text GLabel 1600 3250 0    60   Input ~ 0
+SDA1_I2C_GPIO02
+Text GLabel 1600 3350 0    60   Input ~ 0
+SCL1_I2C_GPIO03
+Text GLabel 1600 3450 0    60   Input ~ 0
+GPIO04
+Text GLabel 1600 3550 0    60   Input ~ 0
+GND
+Text GLabel 1600 3650 0    60   Input ~ 0
+GPIO17
+Text GLabel 1600 3750 0    60   Input ~ 0
+GPIO27
+Text GLabel 1600 3850 0    60   Input ~ 0
+GPIO22
+Text GLabel 1600 3950 0    60   Input ~ 0
+3.3V
+Text GLabel 1600 4050 0    60   Input ~ 0
+GPIO10_SPI_MOSI
+Text GLabel 1600 4150 0    60   Input ~ 0
+GPIO09_SPI_MISO
+Text GLabel 1600 4250 0    60   Input ~ 0
+GPIO11_SPI_CLK
+Text GLabel 1600 4350 0    60   Input ~ 0
+GND
+Text GLabel 1600 4550 0    60   Input ~ 0
+GPIO05
+Text GLabel 1600 4650 0    60   Input ~ 0
+GPIO06
+Text GLabel 1600 4750 0    60   Input ~ 0
+GPIO13
+Text GLabel 1600 4850 0    60   Input ~ 0
+GPIO19
+Text GLabel 1600 4950 0    60   Input ~ 0
+GPIO26
+Text GLabel 1600 5050 0    60   Input ~ 0
+GND
+Wire Wire Line
+	3100 3150 2650 3150
+Wire Wire Line
+	2900 3250 2650 3250
+Wire Wire Line
+	3100 3350 2650 3350
+Wire Wire Line
+	2850 3450 2650 3450
+Wire Wire Line
+	2850 3550 2650 3550
+Wire Wire Line
+	2650 3650 2850 3650
+Wire Wire Line
+	2850 3750 2650 3750
+Wire Wire Line
+	2850 3850 2650 3850
+Wire Wire Line
+	2850 3950 2650 3950
+Wire Wire Line
+	2850 4050 2650 4050
+Wire Wire Line
+	2850 4150 2650 4150
+Wire Wire Line
+	2850 4250 2650 4250
+Wire Wire Line
+	2850 4350 2650 4350
+Wire Wire Line
+	2850 4450 2650 4450
+Wire Wire Line
+	2850 4550 2650 4550
+Wire Wire Line
+	2850 4650 2650 4650
+Wire Wire Line
+	2850 4750 2650 4750
+Wire Wire Line
+	2850 4850 2650 4850
+Wire Wire Line
+	2850 4950 2650 4950
+Wire Wire Line
+	2850 5050 2650 5050
+Wire Wire Line
+	1600 3150 2150 3150
+Wire Wire Line
+	2150 3250 1600 3250
+Wire Wire Line
+	1600 3350 2150 3350
+Wire Wire Line
+	1600 3450 2150 3450
+Wire Wire Line
+	1600 3550 2150 3550
+Wire Wire Line
+	1600 3650 2150 3650
+Wire Wire Line
+	1600 3750 2150 3750
+Wire Wire Line
+	1600 3850 2150 3850
+Wire Wire Line
+	1600 3950 2150 3950
+Wire Wire Line
+	1600 4050 2150 4050
+Wire Wire Line
+	2150 4150 1600 4150
+Wire Wire Line
+	1600 4250 2150 4250
+Wire Wire Line
+	2150 4350 1600 4350
+Wire Wire Line
+	1600 4450 2150 4450
+Wire Wire Line
+	1600 4550 2150 4550
+Wire Wire Line
+	2150 4650 1600 4650
+Wire Wire Line
+	1600 4750 2150 4750
+Wire Wire Line
+	2150 4850 1600 4850
+Wire Wire Line
+	1600 4950 2150 4950
+Wire Wire Line
+	2150 5050 1600 5050
+Text GLabel 6400 2500 2    60   Input ~ 0
+Voltage_Motor_+
+$Comp
+L CONN_02X08 P2
+U 1 1 5AA7E8DE
+P 5750 3150
+F 0 "P2" H 5750 3600 50  0000 C CNN
+F 1 "STEPPER_1" V 5750 3150 50  0000 C CNN
+F 2 "MODULE:A4988_Stepper_Motor_Driver" H 5750 1950 50  0001 C CNN
+F 3 "" H 5750 1950 50  0000 C CNN
+	1    5750 3150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6000 2900 6400 2900
+$Comp
+L CP C1
+U 1 1 5AA7ECF9
+P 6250 2700
+F 0 "C1" H 6275 2800 50  0000 L CNN
+F 1 "470uF" H 6275 2600 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D7.5_L11.2_P2.5" H 6288 2550 50  0001 C CNN
+F 3 "" H 6250 2700 50  0000 C CNN
+	1    6250 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 2800 6000 2500
+Wire Wire Line
+	6000 2500 6400 2500
+Wire Wire Line
+	6250 2500 6250 2550
+Connection ~ 6250 2500
+Wire Wire Line
+	6250 2850 6250 2900
+Connection ~ 6250 2900
+Text GLabel 6400 2900 2    60   Input ~ 0
+GND
+Text GLabel 6250 3000 2    60   Input ~ 0
+2B_1
+Wire Wire Line
+	6250 3000 6000 3000
+Text GLabel 6250 3100 2    60   Input ~ 0
+2A_1
+Wire Wire Line
+	6250 3100 6000 3100
+Text GLabel 6250 3200 2    60   Input ~ 0
+1A_1
+Text GLabel 6250 3300 2    60   Input ~ 0
+1B_1
+Wire Wire Line
+	6250 3200 6000 3200
+Wire Wire Line
+	6250 3300 6000 3300
+Text GLabel 6200 3500 2    60   Input ~ 0
+5v
+Wire Wire Line
+	6200 3650 6000 3650
+Wire Wire Line
+	6000 3650 6000 3500
+Wire Wire Line
+	5200 2800 5500 2800
+Text GLabel 6200 3650 2    60   Input ~ 0
+GND
+Wire Wire Line
+	6200 3500 6100 3500
+Wire Wire Line
+	6100 3500 6100 3400
+Wire Wire Line
+	6100 3400 6000 3400
+Text GLabel 5200 2800 0    60   Input ~ 0
+enable_1
+NoConn ~ 5500 3000
+NoConn ~ 5500 3100
+Text GLabel 5200 3400 0    60   Input ~ 0
+STEP_1
+Text GLabel 5200 3500 0    60   Input ~ 0
+DIR_1
+Wire Wire Line
+	5500 3200 5200 3200
+Wire Wire Line
+	5500 3300 5200 3300
+Wire Wire Line
+	5200 3400 5500 3400
+Wire Wire Line
+	5200 3500 5500 3500
+Wire Wire Line
+	5200 3300 5200 3200
+$Comp
+L CONN_01X04 P4
+U 1 1 5AA80EE6
+P 7300 3150
+F 0 "P4" H 7300 3400 50  0000 C CNN
+F 1 "MOTOR 1" V 7400 3150 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 7300 3150 50  0001 C CNN
+F 3 "" H 7300 3150 50  0000 C CNN
+	1    7300 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 3000 6950 3000
+Text GLabel 6950 3000 0    60   Input ~ 0
+2B_1
+Text GLabel 6950 3100 0    60   Input ~ 0
+2A_1
+Wire Wire Line
+	7100 3100 6950 3100
+Text GLabel 6950 3200 0    60   Input ~ 0
+1A_1
+Wire Wire Line
+	7100 3200 6950 3200
+Text GLabel 6950 3300 0    60   Input ~ 0
+1B_1
+Wire Wire Line
+	7100 3300 6950 3300
+Text GLabel 6400 4200 2    60   Input ~ 0
+Voltage_Motor_+
+$Comp
+L CONN_02X08 P3
+U 1 1 5AA817BC
+P 5750 4850
+F 0 "P3" H 5750 5300 50  0000 C CNN
+F 1 "STEPPER_2" V 5750 4850 50  0000 C CNN
+F 2 "MODULE:A4988_Stepper_Motor_Driver" H 5750 3650 50  0001 C CNN
+F 3 "" H 5750 3650 50  0000 C CNN
+	1    5750 4850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6000 4600 6400 4600
+$Comp
+L CP C2
+U 1 1 5AA817C3
+P 6250 4400
+F 0 "C2" H 6275 4500 50  0000 L CNN
+F 1 "470uF" H 6275 4300 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D7.5_L11.2_P2.5" H 6288 4250 50  0001 C CNN
+F 3 "" H 6250 4400 50  0000 C CNN
+	1    6250 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 4500 6000 4200
+Wire Wire Line
+	6000 4200 6400 4200
+Wire Wire Line
+	6250 4200 6250 4250
+Connection ~ 6250 4200
+Wire Wire Line
+	6250 4550 6250 4600
+Connection ~ 6250 4600
+Text GLabel 6400 4600 2    60   Input ~ 0
+GND
+Text GLabel 6250 4700 2    60   Input ~ 0
+2B_2
+Wire Wire Line
+	6250 4700 6000 4700
+Text GLabel 6250 4800 2    60   Input ~ 0
+2A_2
+Wire Wire Line
+	6250 4800 6000 4800
+Text GLabel 6250 4900 2    60   Input ~ 0
+1A_2
+Text GLabel 6250 5000 2    60   Input ~ 0
+1B_2
+Wire Wire Line
+	6250 4900 6000 4900
+Wire Wire Line
+	6250 5000 6000 5000
+Text GLabel 6200 5200 2    60   Input ~ 0
+5v
+Wire Wire Line
+	6200 5350 6000 5350
+Wire Wire Line
+	6000 5350 6000 5200
+Wire Wire Line
+	5200 4500 5500 4500
+Text GLabel 6200 5350 2    60   Input ~ 0
+GND
+Wire Wire Line
+	6200 5200 6100 5200
+Wire Wire Line
+	6100 5200 6100 5100
+Wire Wire Line
+	6100 5100 6000 5100
+Text GLabel 5200 4500 0    60   Input ~ 0
+enable_2
+NoConn ~ 5500 4600
+NoConn ~ 5500 4700
+NoConn ~ 5500 4800
+Text GLabel 5200 5100 0    60   Input ~ 0
+STEP_2
+Text GLabel 5200 5200 0    60   Input ~ 0
+DIR_2
+Wire Wire Line
+	5500 4900 5200 4900
+Wire Wire Line
+	5500 5000 5200 5000
+Wire Wire Line
+	5200 5200 5500 5200
+Wire Wire Line
+	5200 5000 5200 4900
+$Comp
+L CONN_01X04 P5
+U 1 1 5AA817EB
+P 7300 4850
+F 0 "P5" H 7300 5100 50  0000 C CNN
+F 1 "MOTOR 2" V 7400 4850 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 7300 4850 50  0001 C CNN
+F 3 "" H 7300 4850 50  0000 C CNN
+	1    7300 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 4700 6950 4700
+Wire Wire Line
+	7100 4800 6950 4800
+Wire Wire Line
+	7100 4900 6950 4900
+Wire Wire Line
+	7100 5000 6950 5000
+Wire Wire Line
+	5350 3400 5350 3850
+Wire Wire Line
+	4850 5450 5300 5450
+Connection ~ 5350 3400
+Wire Wire Line
+	5450 3500 5450 3950
+Wire Wire Line
+	4850 5550 5450 5550
+Connection ~ 5450 3500
+Text GLabel 4850 5550 0    60   Input ~ 0
+GPIO20
+Text GLabel 4850 5450 0    60   Input ~ 0
+GPIO21
+Wire Wire Line
+	5300 5450 5300 5100
+Connection ~ 5300 5100
+Wire Wire Line
+	5200 5100 5500 5100
+Wire Wire Line
+	5450 5550 5450 5200
+Connection ~ 5450 5200
+Text GLabel 4800 3950 0    60   Input ~ 0
+GPIO12
+Text GLabel 4800 3850 0    60   Input ~ 0
+GPIO16
+Wire Wire Line
+	5350 3850 4800 3850
+Wire Wire Line
+	5450 3950 4800 3950
+Text GLabel 1600 4450 0    60   Input ~ 0
+ID_SD_EEPROM
+$Comp
+L CONN_01X02 P6
+U 1 1 5AA8B555
+P 9200 3250
+F 0 "P6" H 9200 3400 50  0000 C CNN
+F 1 "PWR" V 9300 3250 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02" H 9200 3250 50  0001 C CNN
+F 3 "" H 9200 3250 50  0000 C CNN
+	1    9200 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 5AA8C2AB
+P 9100 5350
+F 0 "D1" H 9100 5450 50  0000 C CNN
+F 1 "LED" H 9100 5250 50  0000 C CNN
+F 2 "LEDs:LED_0805" H 9100 5350 50  0001 C CNN
+F 3 "" H 9100 5350 50  0000 C CNN
+	1    9100 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 4400 9750 4400
+Wire Wire Line
+	9750 4400 9750 4500
+Wire Wire Line
+	9750 4500 9700 4500
+Wire Wire Line
+	9750 4450 9950 4450
+Connection ~ 9750 4450
+Text GLabel 9850 5350 2    60   Input ~ 0
+LED
+Wire Wire Line
+	9800 4200 9850 4200
+Wire Wire Line
+	8700 4400 8700 4500
+Wire Wire Line
+	8700 4450 8250 4450
+Connection ~ 8700 4450
+Text GLabel 9950 4450 2    60   Input ~ 0
+GND
+Wire Wire Line
+	8700 4150 8700 4250
+Wire Wire Line
+	8700 4200 8250 4200
+Connection ~ 8700 4200
+Text GLabel 8850 3200 0    60   Input ~ 0
+Battery+
+Text GLabel 8850 3300 0    60   Input ~ 0
+Battery-
+Wire Wire Line
+	8850 3200 9000 3200
+Wire Wire Line
+	9000 3300 8850 3300
+Text GLabel 8250 4200 0    60   Input ~ 0
+Battery+
+Text GLabel 8800 2900 0    60   Input ~ 0
+Voltage_Motor_+
+Wire Wire Line
+	8950 3200 8950 2900
+Wire Wire Line
+	8950 2900 8800 2900
+Connection ~ 8950 3200
+Wire Wire Line
+	9850 5350 9300 5350
+Text GLabel 6950 4700 0    60   Input ~ 0
+2B_2
+Text GLabel 6950 4800 0    60   Input ~ 0
+2A_2
+Text GLabel 6950 4900 0    60   Input ~ 0
+1A_2
+Text GLabel 6950 5000 0    60   Input ~ 0
+1B_2
+Text GLabel 4500 3100 0    60   Input ~ 0
+GPIO05
+Wire Wire Line
+	5300 2800 5300 3100
+Wire Wire Line
+	5300 3100 4500 3100
+Connection ~ 5300 2800
+Text GLabel 4900 4750 0    60   Input ~ 0
+GPIO06
+Wire Wire Line
+	5350 4500 5350 4750
+Wire Wire Line
+	5350 4750 4900 4750
+Connection ~ 5350 4500
+Text GLabel 10950 4150 2    60   Input ~ 0
+LED
+Text GLabel 8450 5350 0    60   Input ~ 0
+GND
+$Comp
+L R R1
+U 1 1 5AA9A77A
+P 8700 5350
+F 0 "R1" V 8780 5350 50  0000 C CNN
+F 1 "330" V 8700 5350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8630 5350 50  0001 C CNN
+F 3 "" H 8700 5350 50  0000 C CNN
+	1    8700 5350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8550 5350 8450 5350
+Wire Wire Line
+	8850 5350 8900 5350
+Text GLabel 10450 4600 2    60   Input ~ 0
+5v
+Wire Wire Line
+	10400 4150 10400 4600
+Wire Wire Line
+	10400 4600 10450 4600
+Text GLabel 8250 4450 0    60   Input ~ 0
+Battery-
+Wire Wire Line
+	10900 4150 10900 3850
+Connection ~ 10900 4150
+Wire Wire Line
+	10400 4150 10950 4150
+$Comp
+L LM2596_mini_module U1
+U 1 1 5AA8B1FE
+P 9200 4300
+F 0 "U1" H 9200 4700 60  0000 C CNN
+F 1 "LM2596_mini_module" H 9200 4300 20  0000 C CNN
+F 2 "MODULE:LM2596" H 9200 4300 60  0001 C CNN
+F 3 "" H 9200 4300 60  0000 C CNN
+	1    9200 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 4150 9800 4150
+Wire Wire Line
+	9800 4150 9800 4250
+Connection ~ 9800 4200
+Wire Wire Line
+	9800 4250 9700 4250
+Wire Wire Line
+	9850 4200 9850 3850
+Wire Wire Line
+	9850 3850 10100 3850
+$Comp
+L Switch_SPDT_x2 SW1
+U 1 1 5AA93FB0
+P 10400 3850
+F 0 "SW1" H 10200 4000 50  0000 C CNN
+F 1 "Switch_SPDT_x2" H 10150 3700 50  0000 C CNN
+F 2 "Buttons_Switches_ThroughHole:SW_SPDT" H 10400 3850 50  0001 C CNN
+F 3 "" H 10400 3850 50  0000 C CNN
+	1    10400 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 3950 10700 3850
+Wire Wire Line
+	10700 3850 10900 3850
+NoConn ~ 10700 3750
+NoConn ~ 5500 2900
+$EndSCHEMATC

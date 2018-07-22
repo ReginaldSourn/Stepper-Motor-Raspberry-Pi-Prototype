@@ -1,0 +1,306 @@
+EESchema Schematic File Version 2
+LIBS:_saved_driver-rescue
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:_saved_driver-cache
+EELAYER 25 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Barrel_Jack CON?
+U 1 1 5B471617
+P 10200 1650
+F 0 "CON?" H 10200 1900 50  0000 C CNN
+F 1 "BARREL_JACK" H 10200 1450 50  0000 C CNN
+F 2 "" H 10200 1650 50  0000 C CNN
+F 3 "" H 10200 1650 50  0000 C CNN
+	1    10200 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_02x03_Row_Letter_First J?
+U 1 1 5B50829A
+P 5400 4100
+F 0 "J?" H 5450 4300 50  0000 C CNN
+F 1 "Conn_02x03_Row_Letter_First" H 5450 3900 50  0000 C CNN
+F 2 "" H 5400 4100 50  0001 C CNN
+F 3 "" H 5400 4100 50  0001 C CNN
+	1    5400 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_02x08_Top_Bottom J?
+U 1 1 5B509ECD
+P 6300 4300
+F 0 "J?" H 6350 4700 50  0000 C CNN
+F 1 "Conn_02x08_Top_Bottom" H 6350 3800 50  0000 C CNN
+F 2 "" H 6300 4300 50  0001 C CNN
+F 3 "" H 6300 4300 50  0001 C CNN
+	1    6300 4300
+	-1   0    0    1   
+$EndComp
+Text GLabel 1650 1400 0    60   Input ~ 0
+3.3V
+Text GLabel 1650 1500 0    60   Input ~ 0
+SDA1_I2C_GPIO02
+Text GLabel 1650 1600 0    60   Input ~ 0
+SCL1_I2C_GPIO03
+Text GLabel 1650 1700 0    60   Input ~ 0
+GPIO04
+Text GLabel 1650 1800 0    60   Input ~ 0
+GND
+Text GLabel 1650 1900 0    60   Input ~ 0
+GPIO17
+Text GLabel 1650 2000 0    60   Input ~ 0
+GPIO27
+Text GLabel 1650 2100 0    60   Input ~ 0
+GPIO22
+Text GLabel 1650 2200 0    60   Input ~ 0
+3.3V
+Text GLabel 1650 2300 0    60   Input ~ 0
+GPIO10_SPI_MOSI
+Text GLabel 1650 2400 0    60   Input ~ 0
+GPIO09_SPI_MISO
+Wire Wire Line
+	1650 1400 2400 1400
+Wire Wire Line
+	1650 1500 2400 1500
+Wire Wire Line
+	1650 1600 2400 1600
+Wire Wire Line
+	1650 1700 2400 1700
+Wire Wire Line
+	1650 1800 2400 1800
+Wire Wire Line
+	1650 1900 2400 1900
+Wire Wire Line
+	1650 2000 2400 2000
+Wire Wire Line
+	1650 2100 2400 2100
+Wire Wire Line
+	1650 2200 2400 2200
+Wire Wire Line
+	1650 2300 2400 2300
+Wire Wire Line
+	1650 2400 2400 2400
+Text GLabel 1650 2500 0    60   Input ~ 0
+GPIO11_SPI_CLK
+Text GLabel 1650 2600 0    60   Input ~ 0
+GND
+Text GLabel 1650 2700 0    60   Input ~ 0
+ID_SD_EEPROM
+Text GLabel 1650 2800 0    60   Input ~ 0
+GPIO05
+Text GLabel 1650 2900 0    60   Input ~ 0
+GPIO06
+Text GLabel 1650 3000 0    60   Input ~ 0
+GPIO13
+Text GLabel 1650 3100 0    60   Input ~ 0
+GPIO19
+Text GLabel 1650 3200 0    60   Input ~ 0
+GPIO26
+Text GLabel 1650 3300 0    60   Input ~ 0
+GND
+Wire Wire Line
+	1650 2500 2400 2500
+Wire Wire Line
+	1650 2600 2400 2600
+Wire Wire Line
+	1650 2700 2400 2700
+Wire Wire Line
+	1650 2800 2400 2800
+Wire Wire Line
+	1650 2900 2400 2900
+Wire Wire Line
+	1650 3000 2400 3000
+Wire Wire Line
+	1650 3100 2400 3100
+Wire Wire Line
+	1650 3200 2400 3200
+Wire Wire Line
+	1650 3300 2400 3300
+Text GLabel 3650 1400 2    60   Input ~ 0
+5V
+Text GLabel 3650 1500 2    60   Input ~ 0
+5V
+Text GLabel 3650 1600 2    60   Input ~ 0
+GND
+Text GLabel 3650 1700 2    60   Input ~ 0
+TX_GPIO14
+Text GLabel 3650 1800 2    60   Input ~ 0
+RX_GPIO15
+Text GLabel 3650 1900 2    60   Input ~ 0
+GPIO18
+Text GLabel 3650 2000 2    60   Input ~ 0
+GND
+Text GLabel 3650 2100 2    60   Input ~ 0
+GPIO23
+Text GLabel 3650 2200 2    60   Input ~ 0
+GPIO24
+Text GLabel 3650 2400 2    60   Input ~ 0
+GPIO25
+Text GLabel 3650 2500 2    60   Input ~ 0
+SPI_CE0_GPIO08
+Wire Wire Line
+	3650 1400 2900 1400
+Wire Wire Line
+	3650 1500 2900 1500
+Wire Wire Line
+	3650 1600 2900 1600
+Wire Wire Line
+	3650 1700 2900 1700
+Wire Wire Line
+	3650 1800 2900 1800
+Wire Wire Line
+	3650 1900 2900 1900
+Wire Wire Line
+	3650 2000 2900 2000
+Wire Wire Line
+	3650 2100 2900 2100
+Wire Wire Line
+	3650 2200 2900 2200
+Wire Wire Line
+	3650 2300 2900 2300
+Wire Wire Line
+	3650 2400 2900 2400
+Text GLabel 3650 2600 2    60   Input ~ 0
+SPI_CE0_GPIO07
+Text GLabel 3650 2700 2    60   Input ~ 0
+I2C_ID_SC_EEPROM
+Text GLabel 3650 2800 2    60   Input ~ 0
+GND
+Text GLabel 3650 2900 2    60   Input ~ 0
+GPIO12
+Text GLabel 3650 3000 2    60   Input ~ 0
+GND
+Text GLabel 3650 3100 2    60   Input ~ 0
+GPIO16
+Text GLabel 3650 3200 2    60   Input ~ 0
+GPIO20
+Text GLabel 3650 3300 2    60   Input ~ 0
+GPIO21
+Wire Wire Line
+	3650 2500 2900 2500
+Wire Wire Line
+	3650 2600 2900 2600
+Wire Wire Line
+	3650 2700 2900 2700
+Wire Wire Line
+	3650 2800 2900 2800
+Wire Wire Line
+	3650 2900 2900 2900
+Wire Wire Line
+	3650 3000 2900 3000
+Wire Wire Line
+	3650 3100 2900 3100
+Wire Wire Line
+	3650 3200 2900 3200
+Wire Wire Line
+	3650 3300 2900 3300
+Text GLabel 3650 2300 2    60   Input ~ 0
+GND
+$Comp
+L Conn_02x20_Odd_Even J?
+U 1 1 5B50DB7B
+P 2600 2300
+F 0 "J?" H 2650 3300 50  0000 C CNN
+F 1 "Raspberry_Pi_Pin_Out" H 2650 1200 50  0000 C CNN
+F 2 "Raspberry_Pi_Pin_Out" H 2600 2300 50  0001 C CNN
+F 3 "" H 2600 2300 50  0001 C CNN
+	1    2600 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x02 J?
+U 1 1 5B50E18B
+P 10250 2750
+F 0 "J?" H 10250 2850 50  0000 C CNN
+F 1 "Conn_01x02" H 10250 2550 50  0000 C CNN
+F 2 "" H 10250 2750 50  0001 C CNN
+F 3 "" H 10250 2750 50  0001 C CNN
+	1    10250 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x02 J?
+U 1 1 5B50E202
+P 10250 2150
+F 0 "J?" H 10250 2250 50  0000 C CNN
+F 1 "Conn_01x02" H 10250 1950 50  0000 C CNN
+F 2 "" H 10250 2150 50  0001 C CNN
+F 3 "" H 10250 2150 50  0001 C CNN
+	1    10250 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 4000 6000 4000
+Wire Wire Line
+	5700 4100 6000 4100
+Wire Wire Line
+	5700 4200 6000 4200
+$Comp
+L CP C?
+U 1 1 5B5107DE
+P 7050 3850
+F 0 "C?" H 7075 3950 50  0000 L CNN
+F 1 "CP" H 7075 3750 50  0000 L CNN
+F 2 "" H 7088 3700 50  0001 C CNN
+F 3 "" H 7050 3850 50  0001 C CNN
+	1    7050 3850
+	1    0    0    -1  
+$EndComp
+Text GLabel 12550 1950 0    60   Input ~ 0
+Power_+
+Wire Wire Line
+	5200 4000 5000 4000
+Wire Wire Line
+	5000 4000 5000 4200
+Wire Wire Line
+	5000 4200 5200 4200
+Wire Wire Line
+	4800 4100 5200 4100
+Connection ~ 5000 4100
+Text Label 4800 4100 0    60   ~ 0
+5V
+$EndSCHEMATC
